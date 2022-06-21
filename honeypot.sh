@@ -22,5 +22,5 @@ sudo docker pull d213honeynet/glastopf:version1
 
 echo "Instalasi Selesai"
 sudo docker-compose up
-cp cowrie/cowrie.cfg /var/lib/docker/volumes/ubuntu_cowrie-etc/_data
+cp cowrie/cowrie.cfg /var/lib/docker/volumes/honeypot_cowrie-etc/_data
 exit 0
