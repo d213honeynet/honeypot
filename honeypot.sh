@@ -8,9 +8,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 sudo apt update
 sudo apt install docker-ce
 sudo apt install docker-compose
-sudo usermod -aG docker ${USER}
-su - ${USER}
-docker-compose --version
 
 echo "instalasi Honeypot Cowrie"
 sudo docker pull d213honeynet/cowrie:version1
