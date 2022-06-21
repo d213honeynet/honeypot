@@ -1,0 +1,2 @@
+stream = [('in', b'PROPFIND / HTTP/1.1\x0d\x0aHost: 10.103.176.192\x0d\x0aConnection: close\x0d\x0aDepth: 0\x0d\x0aUser-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)\x0d\x0a\x0d\x0a'),
+('out', b'HTTP/1.1 501 Not Implemented\x0d\x0a')]
