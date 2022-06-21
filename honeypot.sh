@@ -11,15 +11,16 @@ sudo apt install docker-compose
 
 echo "instalasi Honeypot Cowrie"
 sudo docker pull d213honeynet/cowrie:version1
-cp cowrie/cowrie.cfg /var/lib/docker/volumes/ubuntu_cowrie-etc/_data
 
 echo "instalasi Honeypot Dionaea"
 sudo docker pull d213honeynet/dionaea:version4
 mkdir /home/${USER}/dionaea
-cp -r dionaea/ /home/${USER}/dionaea
+cp -r dionaea/ /home/${USER}
 
 echo "instalasi Honeypot Glastopf"
 sudo docker pull d213honeynet/glastopf:version1
 
 echo "Instalasi Selesai"
+sudo docker-compose up
+cp cowrie/cowrie.cfg /var/lib/docker/volumes/ubuntu_cowrie-etc/_data
 exit 0
