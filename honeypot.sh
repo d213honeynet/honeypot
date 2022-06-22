@@ -21,7 +21,7 @@ sudo docker build -t d213honeynet/dionaea:version5 .
 cd ..
 unzip dionaea-conf.zip
 mkdir /home/${USER}/dionaea
-cp -r dionaea-conf/ /home/${USER}
+cp -r dionaea-conf/* /home/${USER}/dionaea
 
 echo "instalasi Honeypot Glastopf"
 sudo docker pull d213honeynet/glastopf:version1
