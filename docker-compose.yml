@@ -20,9 +20,9 @@ services:
     image: d213honeynet/dionaea:version1
     restart: always
     volumes:
-      - /home/${USER}/dionaea/etc/dionaea:/opt/dionaea/etc/dionaea
-      - /home/${USER}/dionaea/var/log:/opt/dionaea/var/log/dionaea
-      - /home/${USER}/dionaea/var/lib:/opt/dionaea/var/lib/dionaea
+      - /home/ubuntu/dionaea/etc/dionaea:/opt/dionaea/etc/dionaea
+      - /home/ubuntu/dionaea/var/log:/opt/dionaea/var/log/dionaea
+      - /home/ubuntu/dionaea/var/lib:/opt/dionaea/var/lib/dionaea
     ports:
       - "21:21" #Ftp
       - "42:42" #
@@ -44,6 +44,6 @@ services:
     image: d213honeynet/glastopf:version1
     restart: always
     volumes:
-      - /home/${USER}/glastopf:/opt/myhoneypot
+      - /home/ubuntu/glastopf:/opt/myhoneypot
     ports:
       - "80:80" #http
