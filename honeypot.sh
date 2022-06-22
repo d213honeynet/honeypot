@@ -13,11 +13,14 @@ echo "instalasi Honeypot Cowrie"
 sudo docker pull d213honeynet/cowrie:version1
 
 echo "instalasi Honeypot Dionaea"
-sudo docker pull d213honeynet/dionaea:version4
+#sudo docker pull d213honeynet/dionaea:version4
 sudo apt-get install unzip
 unzip dionaea.zip
+cd dionaea/
+sudo docker build -t d213honeynet/dionaea:version1 .
+unzip dionaea-conf.zip
 mkdir /home/${USER}/dionaea
-cp -r dionaea/ /home/${USER}
+cp -r dionaea-conf/ /home/${USER}
 
 echo "instalasi Honeypot Glastopf"
 sudo docker pull d213honeynet/glastopf:version1
