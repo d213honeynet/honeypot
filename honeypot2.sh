@@ -1,11 +1,9 @@
 #!/bin/bash
 
-echo " ___           _        _           _   _   _                                   _     ____ ____  _ _____ 
-|_ _|_ __  ___| |_ __ _| | __ _ ___(_) | | | | ___  _ __   ___ _   _ _ __   ___| |_  |  _ \___ \/ |___ / 
- | || '_ \/ __| __/ _` | |/ _` / __| | | |_| |/ _ \| '_ \ / _ \ | | | '_ \ / _ \ __| | | | |__) | | |_ \ 
- | || | | \__ \ || (_| | | (_| \__ \ | |  _  | (_) | | | |  __/ |_| | | | |  __/ |_  | |_| / __/| |___) |
-|___|_| |_|___/\__\__,_|_|\__,_|___/_| |_| |_|\___/|_| |_|\___|\__, |_| |_|\___|\__| |____/_____|_|____/ 
-                                                               |___/                                     "
+echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+
+|I|n|s|t|a|l|a|s|i| |H|o|n|e|y|p|o|t| |D|2|1|3|
++-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+"
+echo -e " \n"
 echo "Instalasi Docker"
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -14,13 +12,17 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 sudo apt update
 sudo apt install -y docker-ce
 sudo apt install -y docker-compose
+echo -e " \n"
 
+echo -e " \n"
 echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+
 |I|n|s|t|a|l|a|s|i| |H|o|n|e|y|p|o|t| |C|o|w|r|i|e|
 +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+"
 echo "instalasi Honeypot Cowrie"
 sudo docker pull d213honeynet/cowrie:version1
+echo -e " \n"
 
+echo -e " \n"
 echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+
 |I|n|s|t|a|l|a|s|i| |H|o|n|e|y|p|o|t| |D|i|o|n|a|e|a|
 +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+"
@@ -35,13 +37,17 @@ cd ..
 unzip dionaea-conf.zip
 mkdir /home/${USER}/dionaea
 cp -r dionaea-conf/* /home/${USER}/dionaea
+echo -e " \n"
 
+echo -e " \n"
 echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
 |I|n|s|t|a|l|a|s|i| |H|o|n|e|y|p|o|t| |G|l|a|s|t|o|p|f|
 +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+"
 echo "instalasi Honeypot Glastopf"
 sudo docker pull d213honeynet/glastopf:version1
+echo -e " \n"
 
+echo -e " \n"
 echo "Instalasi Selesai"
 echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+
 |I|n|s|t|a|l|a|s|i| |S|e|l|e|s|a|i|
