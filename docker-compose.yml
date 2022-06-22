@@ -17,7 +17,7 @@ services:
       - cowrie-var:/cowrie/cowrie-git/var
 
   dionaea:
-    image: d213honeynet/dionaea:version1
+    image: d213honeynet/dionaea:version5
     restart: always
     volumes:
       - /home/ubuntu/dionaea/etc/dionaea:/opt/dionaea/etc/dionaea
