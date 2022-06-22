@@ -42,7 +42,7 @@ sudo docker build -t d213honeynet/dionaea:version1 . --force-rm=true
 cd ..
 unzip dionaea-conf.zip
 mkdir /home/${USER}/dionaea
-cp -r dionaea-conf/* /home/${USER}/dionaea
+cp -r dionaea/* /home/${USER}/dionaea
 
 echo -e " \n"
 echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
