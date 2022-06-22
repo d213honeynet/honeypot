@@ -2,8 +2,9 @@
 Repositori Instalasi Honeypot D213
 
 Cara Instalasi dan Penggunaan :
-1. git clone https://github.com/d213honeynet/honeypot/
-2. cd honeypot/
-3. ./honeypot.sh
-4. sudo docker-compose up
-5. sudo cp cowrie/cowrie.cfg /var/lib/docker/volumes/honeypot_cowrie-etc/_data
+1. sudo apt-get install git
+2. git clone https://github.com/d213honeynet/honeypot/
+3. cd honeypot/
+4. ./honeypot.sh
+5. sudo docker-compose up
+6. sudo cp cowrie/cowrie.cfg /var/lib/docker/volumes/honeypot_cowrie-etc/_data
