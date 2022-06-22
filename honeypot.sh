@@ -17,7 +17,7 @@ echo "instalasi Honeypot Dionaea"
 sudo apt-get install unzip
 unzip dionaea.zip
 cd dionaea/
-sudo docker build -t d213honeynet/dionaea:version1 .
+sudo docker build -t d213honeynet/dionaea:version5 .
 cd ..
 unzip dionaea-conf.zip
 mkdir /home/${USER}/dionaea
