@@ -32,7 +32,7 @@ echo "instalasi Honeypot Dionaea"
 #unzip dionaea.zip
 git clone https://github.com/DinoTools/dionaea
 cd dionaea/
-sudo docker build -rmt d213honeynet/dionaea:version1 .
+sudo docker build -t d213honeynet/dionaea:version1 . --force-rm=true
 cd ..
 unzip dionaea-conf.zip
 mkdir /home/${USER}/dionaea
