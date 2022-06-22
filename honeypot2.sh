@@ -4,6 +4,11 @@ echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+
 |I|n|s|t|a|l|a|s|i| |H|o|n|e|y|p|o|t| |D|2|1|3|
 +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+"
 echo -e " \n"
+
+echo "+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+
+|I|n|s|t|a|l|a|s|i| |D|o|c|k|e|r|
++-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+"
+echo -e " \n"
 echo "Instalasi Docker"
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
