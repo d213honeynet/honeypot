@@ -2,7 +2,7 @@
 Repositori Instalasi Honeypot D213
 
 Cara Instalasi dan Penggunaan :
-1. sudo apt-get install git
+1. sudo apt-get install -y git
 2. git clone https://github.com/d213honeynet/honeypot/
 3. cd honeypot/
 4. ./honeypot.sh
